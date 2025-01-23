@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en-us"></html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+<title>Typography principles</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css"/>
+<!--Style tag goes inside the head tag-->
+<style>
+    h1{
+        background-color: #191970;
+        -moz-background-color:ghostwhite;
+        color: black;
+        font-family: arial,serif;
+        font-weight: bolder;
+        font-size: medium;
+    }
+    p{
+        font-size: medium;
+        text-align: center;
+        word-spacing: 15px;
+        letter-spacing: 2px;
+        text-decoration:solid;
+        text-transform:none;
+    }
+    #styled-by-id
+    {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 200;
+        font-style: oblique;
+        line-height: 40%;
+    }
+    li{
+        margin: 10px;
+        font-size: 20px;
+        display: inline;
+    }
+    #h1-second{
+        color: #191970;
+        font-size: 30px;
+        border-color: #f5f5ff;
+        font-family: serif;
+        font-weight: lighter;
+    }
+    .nav-link{
+        padding: 5px;
+        margin: 4px;
+        border: 2px;
+        border-style: solid;
+        border-color: black;
+        background-color: #191970;
+        color: #f5f5ff;
+    }
+    img{
+        border-color:aqua;
+        border-style: solid;
+        border: 4px;
+        margin-left: auto;
+    }
+    .img-two{
+        border-color:#191970;
+        border-style: solid;
+        border: 2px;
+        margin-right: auto;
+        opacity: 0.2;
+    }
+
+
+</style>
+</head>
+<body>
+    <main>
+        <div style=" background-color: aqua;">
+        <h1>Welcome</h1>
+        <h1 id="h1-second">You Ready&excl;</h1>
+        </div>
+        <div style="background-color: ghostwhite; height: 180px; width: auto;">
+        <p id="styled-by-id">This paragraph will show the effect of giving an element an ID and styling that ID</p>
+        <p>my family eyes color are <spam style="color: brown;">brown</spam></p>
+        <p>This paragraph will show the effect of giving an element an ID and <span style="background-color: bisque;">styling</span><i>that ID</i></p>
+        </div>  
+    </main>
+    <section>
+    <nav>
+        <ul type="circle"> 
+            <div style="background-color: aquamarine;">
+        <li class="nav-link"><a href="index.html">Main Page</a></li>
+            </div>
+        <li class="nav-link"><a href="internal-css.html">more information</a></li>
+        <li class="nav-link"><a href="classes-and-ids.html">more information</a></li>
+        <li class="nav-link"><a href="css-external.html">more information</a></li>
+        </ul>
+    </nav>
+    </section>
+    <figure>
+        <figcaption>YOU READY</figcaption>
+        <div style="background-color: antiquewhite; display: inline-block; opacity: 0.8;">
+        <img class="img-two" src="Image/concert.jpg" width="300" height="300"/>&nbsp;&nbsp;
+        <img class="img-two" src="Image/mech.jpg" width="300" height="300"/>&nbsp;&nbsp;
+        <img style="border: 5px dotted blueviolet;" src="Image/tickets.jpg" width="300" height="200"/>
+        </div>
+    </figure>
+</body>

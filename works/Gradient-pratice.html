@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        body{
+            background-image: url(Image/background.jfif);
+            background-repeat:repeat-x repeat-y;
+            background: linear-gradient(90deg, #dc2424, #4a569d);
+        }
+        h3{
+            color: black;
+        }
+        p{
+            color: black;
+        }
+        .grad_1{
+            height: 150px;
+            width: 150px;
+            border: 2px solid white;
+            border-radius: 100px;
+            background: radial-gradient(circle,#aa4b6b,#6b6b83,#3b8d99 );
+            transform: translate(20px,80px);
+        }
+        #div_1{
+            width: 150px;
+            height: 80px;
+            background-color: white;
+            -webkit-transform: rotate(50deg);
+            -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+        #div_2{
+            width: 150px;
+            height: 120px;
+            background-color: white;
+            transform:translate(20px,10px);
+        }
+        #div_3{
+            width: 150px;
+            height: 120px;
+            background-color: white;
+            transform: skewY(10deg);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="div_1">
+        <h3>Transform</h3>
+        <p>for rotate in degrees in a clockwise direction</p>
+        </div>
+        <div id="div_2">
+            <h3>transform</h3>
+            <p>for transalate with direct how far or in you want the element to be in </p>
+        </div>
+        <div id="div_3">
+            <h3>transform</h3>
+            <p>swek x and y, which determines which corner would be pull back  </p>
+        </div>
+        <div class="grad_1"></div>
+    </main>
+</body>
+</html>
